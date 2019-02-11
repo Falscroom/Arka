@@ -12,6 +12,54 @@
     <script src="imagesLoaded.js"></script>
 </head>
 <body>
+<style>
+    .cards-row {
+        background-color: #fff;
+        margin: 0 auto;
+    }
+    .post {
+        background-color: #f7f7f7;
+    }
+    .post {
+        width: 100%;
+        margin: 10px 0 10px 0;
+        font-family: 'Roboto';
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        display: flex;
+        flex-direction: column;
+        font-size: 1rem;
+        overflow: hidden;
+        position: relative;
+        transition: box-shadow 0.24s ease;
+    }
+    .post-preview {
+        padding: 0 10px 10px 10px;
+    }
+    .post-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        transition: all .32s ease-out;
+    }
+    .post-title {
+        margin-bottom: 0;
+    }
+    .post-subtitle {
+        color: #894bad;
+    }
+    .post-content {
+        padding-top: 1rem;
+        width: 100%;
+    }
+    .read-more {
+        cursor: pointer;
+        float: right;
+        margin-top: .5em;
+        padding: .5em 1em;
+        position: relative;
+        text-decoration: none;
+    }
+</style>
 
 <!--<div class="container-fluid">
     <div class="row" id="featured_posts">
@@ -74,27 +122,26 @@
     <div class="item" style="width: 100px; height: 100px; background-color: green">...</div>
     <div class="item" style="width: 700px; height: 100px; background-color: yellow">...</div>
 </div>-->
-
-
-<style>
-    .grid-item-content {
-
-        border: 4px solid black; /* Параметры границы */
-        margin-bottom: 10px;
-    }
-</style>
 <div class="container-fluid">
     <div class="grid row">
         <div class="col-lg-3 col-md-6 col-sm-6 grid-sizer"></div>
 
         <div class="grid-item col-lg-3 col-md-6 col-sm-6">
             <div class="grid-item-content">
-                <div class="card">
-                    <img src="images/1.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Название карточки</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Переход куда-нибудь</a>
+                <div class="post" id="js-post">
+                    <img class="image" src="images/1.jpeg" alt="" style="width: 100%">
+                    <div class="post-preview">
+                        <div class="post-info">
+                            <h1 class="post-title">Metamorphosis</h1>
+                            <h2 class="post-subtitle">Franz Kafka</h2>
+                        </div>
+                        <div class="post-content" id="js-post-content">
+                            <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided
+                                by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked.</p>
+                            <div class="read-more">
+                                Read More
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -102,56 +149,132 @@
 
         <div class="grid-item col-lg-3 col-md-6 col-sm-6">
             <div class="grid-item-content">
-                <div class="card">
-                    <img src="images/1.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Название карточки</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Переход куда-нибудь</a>
+                <div class="post" id="js-post">
+                    <img class="image" src="images/3.jpeg" alt="" style="width: 100%">
+                    <div class="post-preview">
+                        <div class="post-info">
+                            <h1 class="post-title">Metamorphosis</h1>
+                            <h2 class="post-subtitle">Franz Kafka</h2>
+                        </div>
+                        <div class="post-content" id="js-post-content">
+                            <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided
+                                by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked.</p>
+                            <div class="read-more">
+                                Read More
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="grid-item col-md-6">
-            <div class="grid-item-content" style="height: 400px"></div>
+            <div class="grid-item-content">
+                <div class="post" id="js-post">
+                    <img class="image" src="images/1.jpeg" alt="" style="width: 100%">
+                    <div class="post-preview">
+                        <div class="post-info">
+                            <h1 class="post-title">Metamorphosis</h1>
+                            <h2 class="post-subtitle">Franz Kafka</h2>
+                        </div>
+                        <div class="post-content" id="js-post-content">
+                            <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided
+                                by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked.</p>
+                            <div class="read-more">
+                                Read More
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="grid-item col-md-6">
-            <div class="grid-item-content" style="height: 400px"></div>
+            <div class="grid-item-content">
+                <div class="post" id="js-post">
+                    <img class="image" src="images/1.jpeg" alt="" style="width: 100%">
+                    <div class="post-preview">
+                        <div class="post-info">
+                            <h1 class="post-title">Metamorphosis</h1>
+                            <h2 class="post-subtitle">Franz Kafka</h2>
+                        </div>
+                        <div class="post-content" id="js-post-content">
+                            <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided
+                                by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked.</p>
+                            <div class="read-more">
+                                Read More
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="grid-item col-lg-3 col-md-6 col-sm-6">
-            <div class="grid-item-content" style="height: 300px"></div>
+            <div class="grid-item-content">
+                <div class="post" id="js-post">
+                    <img class="image" src="images/1.jpeg" alt="" style="width: 100%">
+                    <div class="post-preview">
+                        <div class="post-info">
+                            <h1 class="post-title">Metamorphosis</h1>
+                            <h2 class="post-subtitle">Franz Kafka</h2>
+                        </div>
+                        <div class="post-content" id="js-post-content">
+                            <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided
+                                by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked.</p>
+                            <div class="read-more">
+                                Read More
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="grid-item col-lg-3 col-md-6 col-sm-6">
-            <div class="grid-item-content" style="height: 300px"></div>
+            <div class="grid-item-content">
+                <div class="post" id="js-post">
+                    <img class="image" src="images/1.jpeg" alt="" style="width: 100%">
+                    <div class="post-preview">
+                        <div class="post-info">
+                            <h1 class="post-title">Metamorphosis</h1>
+                            <h2 class="post-subtitle">Franz Kafka</h2>
+                        </div>
+                        <div class="post-content" id="js-post-content">
+                            <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided
+                                by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked.</p>
+                            <div class="read-more">
+                                Read More
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
 </div>
-<!--<div class="container-fluid">
+<div class="container-fluid">
     <div class="row grid">
         <div class=".grid-sizer col-4" style="height: 50px; width: 50px; background-color: red"></div>
         <div class=".grid-item col-8" style="height: 50px; background-color: black">            <div class="grid-item-content">suka</div></div>
         <div class=".grid-item col-4" style="height: 50px; background-color: red">            <div class="grid-item-content"></div></div>
     </div>
-</div>-->
+</div>
 <script>
-/*
-    var $grid = $('.grid').isotope({
-        itemSelector: '.grid-item',
-        percentPosition: true,
-        masonry: {
-            columnWidth: '.grid-sizer'
-        }
-    });
+    /*
+        var $grid = $('.grid').isotope({
+            itemSelector: '.grid-item',
+            percentPosition: true,
+            masonry: {
+                columnWidth: '.grid-sizer'
+            }
+        });
 
-    $grid.imagesLoaded().progress( function() {
-        $grid.isotope('layout');
-    });
-*/
+        $grid.imagesLoaded().progress( function() {
+            $grid.isotope('layout');
+        });
+    */
 
     $('.grid').imagesLoaded( function() {
         // init Isotope after all images have loaded
