@@ -20,7 +20,7 @@
     .post {
         background-color: #f7f7f7;
     }
-    .post {
+    .grid-item-content > .post {
         width: 100%;
         margin: 10px 0 10px 0;
         font-family: 'Roboto';
@@ -59,13 +59,19 @@
         position: relative;
         text-decoration: none;
     }
+    .date-category {
+        float: left;
+        margin-top: .5em;
+        padding: .5em 0;
+        position: relative;
+    }
 </style>
 
-<!--<div class="container-fluid">
-    <div class="row" id="featured_posts">
-        <div class="col-md-6 post">
+<div class="container-fluid" style="height: 300px">
+    <div class="row" id="featured_posts" style="height: 100%">
+        <div class="col-md-6 post" style="height: 100%">
             <div class="row inner" style="height: inherit">
-                <img src="images/1.jpeg" alt="" class="featured-img">
+                <img src="images/1.jpeg" alt="" class="featured-img" style="min-height: 630px">
 
                 <div class="row content-about">
                     <h4 class="category"><a>category</a></h4>
@@ -74,8 +80,8 @@
 
             </div>
         </div>
-        <div class="col-md-6 post">
-            <div class="row inner">
+        <div class="col-md-6 post" style="height: 100%">
+            <div class="row inner" style="height: 50%">
                 <img src="images/2.jpg" alt="" class="featured-img">
 
                 <div class="special-snowflake" style="position: relative">
@@ -86,9 +92,9 @@
                 </div>
             </div>
 
-            <div class="row inner">
+            <div class="row inner" style="height: 50%">
                 <div class="col-md-6 post">
-                    <div class="row inner">
+                    <div class="row inner" style="height: 100%">
                         <img src="images/3.jpeg" alt="" class="featured-img">
 
                         <div class="row content-about">
@@ -100,7 +106,7 @@
                 </div>
 
                 <div class="col-md-6 post">
-                    <div class="row inner">
+                    <div class="row inner" style="height: 100%">
                         <img src="images/4.jpeg" alt="" class="featured-img">
 
                         <div class="row content-about">
@@ -114,7 +120,7 @@
 
         </div>
     </div>
-</div>-->
+</div>
 <!--////// HEAD END-->
 
 <!--<div id="container">
@@ -122,22 +128,23 @@
     <div class="item" style="width: 100px; height: 100px; background-color: green">...</div>
     <div class="item" style="width: 700px; height: 100px; background-color: yellow">...</div>
 </div>-->
-<div class="container-fluid">
+<!--<div class="container-fluid">
     <div class="grid row">
         <div class="col-lg-3 col-md-6 col-sm-6 grid-sizer"></div>
 
         <div class="grid-item col-lg-3 col-md-6 col-sm-6">
             <div class="grid-item-content">
-                <div class="post" id="js-post">
+                <div class="post">
                     <img class="image" src="images/1.jpeg" alt="" style="width: 100%">
                     <div class="post-preview">
                         <div class="post-info">
                             <h1 class="post-title">Metamorphosis</h1>
                             <h2 class="post-subtitle">Franz Kafka</h2>
                         </div>
-                        <div class="post-content" id="js-post-content">
+                        <div class="post-content">
                             <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided
                                 by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked.</p>
+                            <div class="date-category">12.07.2018 | Finance</div>
                             <div class="read-more">
                                 Read More
                             </div>
@@ -149,16 +156,16 @@
 
         <div class="grid-item col-lg-3 col-md-6 col-sm-6">
             <div class="grid-item-content">
-                <div class="post" id="js-post">
+                <div class="post">
                     <img class="image" src="images/3.jpeg" alt="" style="width: 100%">
                     <div class="post-preview">
                         <div class="post-info">
                             <h1 class="post-title">Metamorphosis</h1>
                             <h2 class="post-subtitle">Franz Kafka</h2>
                         </div>
-                        <div class="post-content" id="js-post-content">
+                        <div class="post-content">
                             <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided
-                                by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked.</p>
+                                by arches into stiff sections.</p>
                             <div class="read-more">
                                 Read More
                             </div>
@@ -170,14 +177,14 @@
 
         <div class="grid-item col-md-6">
             <div class="grid-item-content">
-                <div class="post" id="js-post">
+                <div class="post">
                     <img class="image" src="images/1.jpeg" alt="" style="width: 100%">
                     <div class="post-preview">
                         <div class="post-info">
                             <h1 class="post-title">Metamorphosis</h1>
                             <h2 class="post-subtitle">Franz Kafka</h2>
                         </div>
-                        <div class="post-content" id="js-post-content">
+                        <div class="post-content">
                             <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided
                                 by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked.</p>
                             <div class="read-more">
@@ -189,16 +196,17 @@
             </div>
         </div>
 
-        <div class="grid-item col-md-6">
+
+        <div class="grid-item col-lg-3 col-md-6 col-sm-6">
             <div class="grid-item-content">
-                <div class="post" id="js-post">
+                <div class="post">
                     <img class="image" src="images/1.jpeg" alt="" style="width: 100%">
                     <div class="post-preview">
                         <div class="post-info">
                             <h1 class="post-title">Metamorphosis</h1>
                             <h2 class="post-subtitle">Franz Kafka</h2>
                         </div>
-                        <div class="post-content" id="js-post-content">
+                        <div class="post-content">
                             <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided
                                 by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked.</p>
                             <div class="read-more">
@@ -219,28 +227,7 @@
                             <h1 class="post-title">Metamorphosis</h1>
                             <h2 class="post-subtitle">Franz Kafka</h2>
                         </div>
-                        <div class="post-content" id="js-post-content">
-                            <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided
-                                by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked.</p>
-                            <div class="read-more">
-                                Read More
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="grid-item col-lg-3 col-md-6 col-sm-6">
-            <div class="grid-item-content">
-                <div class="post" id="js-post">
-                    <img class="image" src="images/1.jpeg" alt="" style="width: 100%">
-                    <div class="post-preview">
-                        <div class="post-info">
-                            <h1 class="post-title">Metamorphosis</h1>
-                            <h2 class="post-subtitle">Franz Kafka</h2>
-                        </div>
-                        <div class="post-content" id="js-post-content">
+                        <div class="post-content">
                             <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided
                                 by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked.</p>
                             <div class="read-more">
@@ -253,14 +240,7 @@
         </div>
 
     </div>
-</div>
-<div class="container-fluid">
-    <div class="row grid">
-        <div class=".grid-sizer col-4" style="height: 50px; width: 50px; background-color: red"></div>
-        <div class=".grid-item col-8" style="height: 50px; background-color: black">            <div class="grid-item-content">suka</div></div>
-        <div class=".grid-item col-4" style="height: 50px; background-color: red">            <div class="grid-item-content"></div></div>
-    </div>
-</div>
+</div>-->
 <script>
     /*
         var $grid = $('.grid').isotope({
